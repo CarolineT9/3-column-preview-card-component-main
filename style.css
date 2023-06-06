@@ -1,0 +1,134 @@
+.attribution { font-size: 11px; text-align: center; margin-bottom:10px ; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    
+
+}
+
+.container{
+    padding: 50px;
+}
+.padding{
+    padding:35px;
+}
+.car1{
+    background-color: var(--Bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.car2{
+    background-color: var(--Dark-cyan);
+}
+
+.car3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive ;
+}
+p{
+    margin-bottom: 30px;
+    color: var(--Transparent-white);
+    padding-right: 40px;
+}
+.btn{
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px ;
+    transition: 0.5s;
+}
+.btn1{
+    color:var(--Bright-orange)
+}
+.btn2{
+    color:var(--Dark-cyan)
+    
+}
+.btn2{
+    color:var(--Very-dark-cyan)
+}
+
+.btn1:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Bright-orange);
+    border: 2px solid var(--Very-light-gray);
+    
+}
+.btn2:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Dark-cyan);
+    border: 2px solid var(--Very-light-gray);
+    
+}
+
+.btn3:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Very-dark-cyan);
+    border: 2px solid var(--Very-light-gray);
+    
+}
+@media (min-width:920px){
+  
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    } 
+     .cars{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 500px;
+    max-width: 1100px ;
+    margin: auto; 
+    }
+
+    .car1{
+        border-radius: 8px 0 0 8px ;
+        width: 30%;
+        height: 100%;
+    }
+    .car2{
+        width: 30%;
+        height: 100%;
+        
+    }
+    .car3{
+        border-radius: 0 8px 8px 0;
+        width: 30%;
+        height: 100%;
+    }
+    p{
+        margin-bottom: 50px;
+        padding-right: 0;
+        margin-bottom: 0;
+        height: 80px;
+    }
+   .btn{
+    margin-top: 160px;
+   }
+}
